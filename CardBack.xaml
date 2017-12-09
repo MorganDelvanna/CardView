@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="PFGA_Cards.CardBack"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="336" d:DesignWidth="192">
+    <Border BorderThickness="1" BorderBrush="Black">
+    <StackPanel Background="White" Width="336" Height="192">
+            <StackPanel.LayoutTransform>
+                <RotateTransform Angle="90" />
+            </StackPanel.LayoutTransform>
+        <StackPanel.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="Margin" Value="5,5,5,5" />
+            </Style>
+            <Style TargetType="Label" >
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="HorizontalAlignment" Value="Center" />
+            </Style>     
+        </StackPanel.Resources>
+        <Label>
+            To Report a Trespasser
+        </Label>
+        <TextBlock >-Take a picture if you can</TextBlock>
+        <TextBlock Margin="5,5,5,0">
+            -To report to the OPP call 1-800-310-1122 
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,40,0">our address is 608 Division road (705-742-6845)</TextBlock>
+        <TextBlock>-Give a statement to the police officer</TextBlock>
+        <TextBlock>-Call a member of the executive</TextBlock>
+    </StackPanel>
+    </Border>
+</UserControl>
